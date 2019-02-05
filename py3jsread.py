@@ -59,13 +59,7 @@ def B():
     # e是 baidujs.js 的一个js 函数
     execjs.compile(jsData).call('hy',['11342412']) #此处hy函数传递的参数为js数组,[]形式
 
-# 为线程定义一个函数
-def print_time( threadName, delay):
-   count = 0
-   while count < 5:
-      time.sleep(delay)
-      count += 1
-      print ("%s: %s" % ( threadName, time.ctime(time.time()) ))
+
 
 # 创建两个线程
 try:
